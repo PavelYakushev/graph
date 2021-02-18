@@ -78,7 +78,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Kirill\test\GL\GLM\glm;C:\Users\Kirill\test\GL\GLEW\include;C:\Users\Kirill\test\GL\GLFW\include;C:\Users\Kirill\test\GL\GLAD\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Kirill\test\GL\GLM\;C:\Users\Kirill\test\GL\GLEW\include;C:\Users\Kirill\test\GL\GLFW\include;C:\Users\Kirill\test\GL\GLAD\include;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\Kirill\test\GL\GLAD\src;C:\Users\Kirill\test\Project;C:\Users\Kirill\test\shaders;$(SourcePath)</SourcePath>
+    <ExecutablePath>C:\Users\Kirill\test\bin;$(ExecutablePath)</ExecutablePath>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <LibraryPath>C:\Users\Kirill\test\GL\GLFW\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -128,6 +132,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\GL\GLAD\include\glad\glad.h" />
+    <ClInclude Include="..\GL\GLFW\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\GL\GLFW\include\GLFW\glfw3native.h" />
+    <ClInclude Include="..\GL\GLM\glm\glm.hpp" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />

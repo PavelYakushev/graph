@@ -38,6 +38,15 @@
     <ClInclude Include="..\GL\GLAD\include\glad\glad.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="..\GL\GLM\glm\glm.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GL\GLFW\include\GLFW\glfw3.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GL\GLFW\include\GLFW\glfw3native.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\shaders\3.1.3.debug_quad.fs">
